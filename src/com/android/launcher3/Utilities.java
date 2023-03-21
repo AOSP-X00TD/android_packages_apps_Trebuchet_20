@@ -810,7 +810,7 @@ public final class Utilities {
     }
 
     public static boolean isDoubleTapGestureEnabled(Context context) {
-        SharedPreferences prefs = getPrefs(context.getApplicationContext());
+        SharedPreferences prefs = LauncherPrefs.getPrefs(context.getApplicationContext());
         return prefs.getBoolean(KEY_DT_GESTURE, true);
     }
 }
